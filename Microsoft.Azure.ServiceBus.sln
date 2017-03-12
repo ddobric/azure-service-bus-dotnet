@@ -1,26 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A7C6F327-6E00-4D96-9AE7-60BF2DD50069}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BFF99FDC-98EB-46DC-B516-FC8FB08ACEB8}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.Azure.ServiceBus", "src\Microsoft.Azure.ServiceBus\Microsoft.Azure.ServiceBus.xproj", "{A042ADF0-EF65-4F87-B634-322A409F3D61}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5FDD29DE-4CB9-4C79-BBD4-8A61DA5676E6}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.Azure.ServiceBus.UnitTests", "test\Microsoft.Azure.ServiceBus.UnitTests\Microsoft.Azure.ServiceBus.UnitTests.xproj", "{BDA98E20-3A26-4A5A-9371-CB02B73E3434}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{7DEB55BB-1957-4A19-ACBC-B413CA68DC4B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SendSample", "samples\SendSample\SendSample.xproj", "{DC1B79BF-9145-4756-A08A-B9AA7F5A2E37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.ServiceBus", "src\Microsoft.Azure.ServiceBus\Microsoft.Azure.ServiceBus.csproj", "{A042ADF0-EF65-4F87-B634-322A409F3D61}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ReceiveSample", "samples\ReceiveSample\ReceiveSample.xproj", "{3E771E9B-F9BB-45FB-A68D-CD6B87267C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.ServiceBus.UnitTests", "test\Microsoft.Azure.ServiceBus.UnitTests\Microsoft.Azure.ServiceBus.UnitTests.csproj", "{BDA98E20-3A26-4A5A-9371-CB02B73E3434}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendSample", "samples\SendSample\SendSample.csproj", "{DC1B79BF-9145-4756-A08A-B9AA7F5A2E37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveSample", "samples\ReceiveSample\ReceiveSample.csproj", "{3E771E9B-F9BB-45FB-A68D-CD6B87267C4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

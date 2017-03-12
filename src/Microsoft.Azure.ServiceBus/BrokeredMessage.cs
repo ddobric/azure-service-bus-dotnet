@@ -126,6 +126,17 @@ namespace Microsoft.Azure.ServiceBus
             this.BodyStream = messageBodyStream;
         }
 
+        /// <summary>Initializes a new instance of the
+        /// <see cref="BrokeredMessage" /> class using the supplied buffer as its body.</summary>
+        /// <param name="messageBodyStream">The message body stream.</param>
+        /// <param name="ownsStream">true to indicate that the stream will be closed when the message is
+        /// closed; false to indicate that the stream will not be closed when the message is closed.</param>
+        public BrokeredMessage(byte buff)
+        {
+            this.ownsBodyStream = false;
+            this.BodyStream = new MemoryStream(buff);
+        }
+
         internal BrokeredMessage(object bodyObject, Stream bodyStream)
             : this()
         {
